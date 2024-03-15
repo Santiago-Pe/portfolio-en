@@ -11,6 +11,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<style>
+			.swiper {
+				width: 100%;
+				height: 100%;
+			}
+		
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: black;
+				height: 70vh;
+			}
+		
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -30,9 +55,35 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Wellet Admin</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<span class="image fit">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">Slide 1</div>
+										<div class="swiper-slide">Slide 2</div>
+										<div class="swiper-slide">Slide 3</div>
+										<div class="swiper-slide">Slide 4</div>
+										<div class="swiper-slide">Slide 5</div>
+										<div class="swiper-slide">Slide 6</div>
+										<div class="swiper-slide">Slide 7</div>
+										<div class="swiper-slide">Slide 8</div>
+										<div class="swiper-slide">Slide 9</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</span>
+							<p>I collaborated in developing a dashboard admin linked to the PWA from scratch, aiming to provide necessary information
+							for decision-making, user and profile management, graphs and metrics, as well as forms for creating events, products, or
+							services. It also included informative tables on reservation statuses, commissions, and financial movements, payment
+							release, comment management, and conflict handling. Filtering and data manipulation tools were implemented, along with
+							report generation features, among others. Code architectures were designed to ensure the coexistence of multiple users
+							and secure information editing. React Hook Forms for form control, React Query for data manipulation and API
+							communication, Date FNS for date handling, Swiper JS, Redux, and Context for non-local state management were utilized in
+							the development process.
+							
+							</p>
+							<p>This project was entirely directed by myself and a colleague, taking responsibility for the entire project architecture
+							with a focus on scalability, reusability, ease of editing, and application.</p>
 						</div>
 					</section>
 
@@ -48,13 +99,26 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/swiper.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
 
 	</body>
 </html>
